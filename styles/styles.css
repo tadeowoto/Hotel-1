@@ -28,15 +28,15 @@
     margin-right: 18px;
 }
 
-.left-list{
-    
-}
 
 .right-info{
     width: 70px;
     display: flex;
-    
     justify-content: space-between;
+}
+
+.right-info img{
+    width: 22px;
 }
 
 
