@@ -42,5 +42,34 @@
 
 /* main-section */
 
+.main-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.search-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+}
+
+.options{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--main-red);
+    width: 400px;
+    height: 60px;
+}
+.search-options{
+    font-size: 30px;
+    color: var(--secondary-white);
+}
+
 
 
