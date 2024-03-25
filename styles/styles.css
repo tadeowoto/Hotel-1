@@ -147,6 +147,10 @@
     display: flex;
     justify-content: space-between;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.9); 
+    transition: transform 0.3s ease;
+}
+.hotel-component:hover{
+    transform: translateX(20px);
 }
 
 .hotel-left-images{
@@ -157,7 +161,7 @@
 .hotel-contact{
     height: 90px;
     width: 100%;
-    background: linear-gradient(to right, #F9C900, #DD6600);
+    background: radial-gradient(circle at center, #F9C900, #DD6600);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -185,14 +189,6 @@
     width: 50px;
 }
 
-.hotel-mid-info{
-    width: calc((100% - (2 * 10%)) / 3);
-}
-
-.hotel-right-images{
-    width: calc((100% - (2 * 10%)) / 3); 
-}
-
 .hotel-map-container{
     height: 90px;
     width: 100%; 
@@ -204,5 +200,87 @@
     height: auto;
     display: block;
 }
+
+
+
+.hotel-mid-info{
+    width: calc((100% - (2 * 10%)) / 3);
+    max-height: 280px;
+    overflow-y: auto;
+    color: var(--secondary-white);
+}
+
+.hotel-info-title-wrap{
+    display: block;
+    text-align: center;
+    margin: 20px 0px 18px 0px;
+    border-bottom: 2px solid var(--secondary-white);
+}
+
+.hotel-mid-info-title{
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.ul-title{
+    display: block;
+    font-size: 18px;
+    margin: -20px 0px 0px 24px;
+    border-bottom: 2px solid var(--secondary-white);
+    border-left: 2px solid var(--secondary-white);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+.hotel-attributes-list li{
+    margin: 14px 0px 14px 0px;
+    list-style: inside;
+}
+
+#contact{
+    margin-top: 10px;
+}
+
+
+
+
+
+.hotel-right-images{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; 
+
+}
+
+.hotel-img1{
+    height: 90px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.hotel-img1 img,
+.hotel-img2 img,
+.hotel-img3 img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+.hotel-img2{
+    height: 90px;
+    width: 100%;
+    overflow: hidden;
+}
+
+
+.hotel-img3{
+    height: 90px;
+    width: 100%;
+    overflow: hidden;
+}
+
+
 
 
